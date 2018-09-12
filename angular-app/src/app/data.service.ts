@@ -6,8 +6,10 @@ import { Observable, of } from 'rxjs';
 })
 export class DataService {
 
-  data : any = {
-    "nodes": [
+  data : any =
+  {
+    "nodes":
+    [
       {
         "display": "Arbor Day Merchandise ",
         "nodes": [
