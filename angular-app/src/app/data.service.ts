@@ -5,6 +5,131 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
+ 
+  data3 : any = [
+    {
+      label: "Arbor Day Merchandise ",
+      collapsedIcon: 'fa-folder',
+      expandedIcon: 'fa-folder-open',
+      children: [
+        {
+          label: "Cancel order ",
+          data: "Arbor Day Merchandise - Cancel order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Expedite order ",
+          data: "Arbor Day Merchandise - Expedite order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Free materials ",
+          data: "Arbor Day Merchandise - Free materials",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Place / change order ",
+          data: "Arbor Day Merchandise - Place / Change order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Change order ",
+          data: "Arbor Day Merchandise - Change order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Questions ",
+          data: "Arbor Day Merchandise - Questions",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Replace / Refund ",
+          data: "Arbor Day Merchandise - Replace / Refund",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Status of my order ",
+          data: "Arbor Day Merchandise - Status of my order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        }
+      ]
+    },
+    {
+      label: "Newsletter Premium ",
+      collapsedIcon: 'fa-folder',
+      expandedIcon: 'fa-folder-open',
+      children: [
+        {
+          label: "Cancel order ",
+          data: "Newsletter Premium - Cancel order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Place / Change order ",
+          data: "Newsletter Premium - Place / Change order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Questions ",
+          data: "Newsletter Premium - Questions",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Replace / Refund ",
+          data: "Newsletter Premium - Replace / Refund",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+        {
+          label: "Status of my order ",
+          data: "Newsletter Premium - Status of my order",
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+        },
+      ]
+    }
+  ]
+
+  data2 : any = [
+    {
+      label: 'Folder 1',
+      collapsedIcon: 'fa-folder',
+      expandedIcon: 'fa-folder-open',
+      children: [
+        {
+          label: 'Folder 2',
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open',
+          children: [
+            {
+              label: 'File 2',
+              icon: 'fa-file-o'
+            }
+          ]
+        },
+        {
+          label: 'Folder 2',
+          collapsedIcon: 'fa-folder',
+          expandedIcon: 'fa-folder-open'
+        },
+        {
+          label: 'File 1',
+          icon: 'fa-file-o'
+        }
+      ]
+    }
+  ];
 
   data : any =
   {
@@ -511,6 +636,6 @@ export class DataService {
   constructor() { }
 
   getData() : Observable<any[]> {
-    return of(this.data);
+    return of(this.data3);
   }
 }

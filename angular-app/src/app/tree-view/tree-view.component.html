@@ -1,1 +1,15 @@
-<p-tree [value]="files"></p-tree>
+
+<p-tree [value]="files">
+    <ng-template let-node pTemplate="default">
+        <p>Disposition Code: {{ node.label }}</p>
+        <p *ngIf="node.data">Full Disposition Code: {{ node.data }}</p>
+    </ng-template>
+</p-tree>
+
+<!--<p-tree [value]="files">
+    <ng-template let-node  pTemplate="default">
+        <input [(ngModel)]="node.label" type="text" style="width:100%">
+    </ng-template>
+</p-tree> -->
+
+<!-- <p-tree [value]="files" (onNodeExpand)="loadNode($event)"></p-tree> -->
